@@ -1,14 +1,15 @@
+package br.com.alura.projeto.Tela;
 public class ItensDaTela {
     
-    void todaTela(){
+    public void todaTela(){
         System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
     }
 
-    void pequenoEspaco(){
+    public void pequenoEspaco(){
         System.out.println("\n");
     }
 
-    void linhas() {
+    public void linhas() {
         System.out.println("----------------------------");
     }
 
