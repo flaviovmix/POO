@@ -23,8 +23,7 @@ public class Filme extends Titulo{
 
     public void fichaTecnica() {
         System.out.println("----------------------------");
-        System.out.println("   FIXA TÉCNICA - [FILME]");
-        System.out.println("----------------------------");
+        System.out.println("FIXA TÉCNICA - [FILME] -\n");
         super.fichaTecnica();
         System.out.println("Quantidade de salas: " + quantiadeDeSalas);
         System.out.println("Em cartaz: " + emCartaz);
@@ -34,7 +33,5 @@ public class Filme extends Titulo{
         }else {
             System.out.println("Ativa: não");
         }
-
-        System.out.println("----------------------------");
     }
 }

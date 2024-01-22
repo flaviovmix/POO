@@ -27,8 +27,7 @@ public class Serie extends Titulo {
 
     public void fichaTecnica() {
         System.out.println("----------------------------");
-        System.out.println("   FIXA TÉCNICA - [SÉRIE]");
-        System.out.println("----------------------------");
+        System.out.println("FIXA TÉCNICA - [SÉRIE] -\n");
         super.fichaTecnica();
         System.out.println("Quantidade de temporadas: " + temporadas);
         System.out.println("Total de epsódios: " + episodios);
@@ -38,8 +37,6 @@ public class Serie extends Titulo {
         }else {
             System.out.println("Ativa: não");
         }
-        
-        System.out.println("----------------------------");
     }
 
 }

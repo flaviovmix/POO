@@ -12,7 +12,7 @@ public class App {
         Filme filme1 = new Filme();
         filme1.setNome("Cidade de Deus");
         filme1.setAnoLancamento(2000);
-        filme1.setEmCartaz(false);
+        filme1.setEmCartaz(true);
         filme1.setQuantiadeDeSalas(1185);
         filme1.setDuracaoEmMinutos(117);
         somarTempo.inclui(filme1);
@@ -23,7 +23,7 @@ public class App {
         filme1.mediaAvaliacao();
         filme1.fichaTecnica();
 
-        itensTela.pequenoEspaco();
+        //itensTela.pequenoEspaco();
 
         Filme filme2 = new Filme();
         filme2.setNome("Matrix");
@@ -39,7 +39,7 @@ public class App {
         filme2.mediaAvaliacao();
         filme2.fichaTecnica();
 
-        itensTela.pequenoEspaco();
+        //itensTela.pequenoEspaco();
 
         Serie serie1 = new Serie();
         serie1.setNome("Lost");
@@ -56,6 +56,7 @@ public class App {
         serie1.mediaAvaliacao();
         serie1.fichaTecnica();
 
+        System.out.println("----------------------------");
         System.out.println("\nTotal de tempo: " +
                             somarTempo.getTempoTotal() + " minutos.\n"
                           );
