@@ -6,7 +6,7 @@ public class Titulo {
     private boolean incluidoNoPlano;
     private double somaDasAvaliacao;
     private int duracaoEmMinutos; 
-    private String avaliacao;
+    protected String avaliacao;
     private int totalDeAvaliacao;
 
     public String getNome() {

@@ -1,6 +1,8 @@
 package br.com.alura.projeto.modelo;
 
-public class Serie extends Titulo {
+import br.com.alura.projeto.Calculo.Classificavel;
+
+public class Serie extends Titulo implements Classificavel{
 
     private int temporadas;
     private int episodios;
@@ -36,6 +38,22 @@ public class Serie extends Titulo {
             System.out.println("Ativa: sim");
         }else {
             System.out.println("Ativa: não");
+        }
+    }
+    @Override
+    public int getClassificacao() {
+        if (temporadas == 1) {
+            return 0;
+        }else if (temporadas == 2){
+            return 1;
+        }else if (temporadas <= 5){
+            return 2;
+        }else if (temporadas <= 10){
+            return 3;
+        }else if (temporadas <= 15){
+            return 4;
+        }else {
+            return 5;
         }
     }
 

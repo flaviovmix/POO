@@ -1,6 +1,8 @@
 package br.com.alura.projeto.modelo;
 
-public class Filme extends Titulo{
+import br.com.alura.projeto.Calculo.Classificavel;
+
+public class Filme extends Titulo implements Classificavel{
 
     private int quantiadeDeSalas;
     public boolean emCartaz;
@@ -32,6 +34,23 @@ public class Filme extends Titulo{
             System.out.println("Ativa: sim");
         }else {
             System.out.println("Ativa: não");
+        }
+    }
+
+    @Override
+    public int getClassificacao() {
+        if (quantiadeDeSalas <= 250) {
+            return 0;
+        }else if (quantiadeDeSalas <= 500){
+            return 1;
+        }else if (quantiadeDeSalas <= 750){
+            return 2;
+        }else if (quantiadeDeSalas <= 1000){
+            return 3;
+        }else if (quantiadeDeSalas <= 1250){
+            return 4;
+        }else {
+            return 5;
         }
     }
 }
